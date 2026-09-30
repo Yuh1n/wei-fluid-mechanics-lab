@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Footer, Header } from "./site-shell";
 
 export const metadata: Metadata = {
   title: "Interfacial Flow and Intelligent Manufacturing Group",
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><Header /><main>{children}</main><Footer /></body>
     </html>
   );
 }
